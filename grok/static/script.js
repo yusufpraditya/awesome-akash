@@ -1,7 +1,6 @@
 const inference = async (text) => {
   const inferResponse = await fetch(`infer?input=${text}`);
   const inferJson = await inferResponse.json();
-  console.log(inferJson.output);
   return inferJson.output;
 };
 
